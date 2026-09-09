@@ -233,7 +233,7 @@
   <div class="result-box" id="result-box"></div>
   <div class="action-btns">
     <button class="copy-btn" id="copy-btn" onclick="copyFormat()">📋 Salin</button>
-    <button class="wa-btn" onclick="kirimWA()">📲 Kirim ke Seller</button>
+    <button class="wa-btn" onclick="kirimWA()">📲 Kirim ke Admin</button>
   </div>
   <button class="edit-btn" onclick="editForm()">← Edit Form</button>
 </div>
@@ -294,7 +294,10 @@
     generated =
 `📌🅸🅽🅸 🅱︎🆄︎🅺︎🅰︎🅽︎ 🅰︎🅺︎🆄︎🅽︎ 🅰︎🅳︎🅼︎🅸︎🅽︎📌
 
-𝙆𝙤𝙣𝙩𝙖𝙠 𝙨𝙚𝙡𝙡𝙚𝙧: ${nohp}${ig ? '\n𝙄𝙂 𝙨𝙚𝙡𝙡𝙚𝙧: ' + ig : ''}
+⚠️ Peringatan! Wajib pakai rekber admin Luunastore.in, jangan transaksi langsung ke seller tanpa rekber. Follow admin biar terhindar clone.
+
+𝙆𝙤𝙣𝙩𝙖𝙠 𝙨𝙚𝙡𝙡𝙚𝙧:
+𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥: ${nohp}${ig ? '\n𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢: ' + ig : ''}
 
 𝙙𝙚𝙩𝙖𝙞𝙡 𝙖𝙠𝙪𝙣:
 Login via: ${finalLogin}
@@ -308,7 +311,7 @@ Level: ${level}${charlim ? '\nCharacter limited: ' + charlim : ''}${kelebih ? '\
 
 ⚠️ 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙘𝙝𝙖𝙩 𝙡𝙖𝙣𝙜𝙨𝙪𝙣𝙜 𝙠𝙚 𝙣𝙤𝙢𝙤𝙧 𝙨𝙚𝙡𝙡𝙚𝙧 𝙙𝙞 𝙖𝙩𝙖𝙨 𝙪𝙣𝙩𝙪𝙠 𝙘𝙚𝙠 𝙠𝙚𝙩𝙚𝙧𝙨𝙚𝙙𝙞𝙖𝙖𝙣 𝙗𝙖𝙧𝙖𝙣𝙜
 
-#${game.replace(/\s/g,'').toLowerCase()} #jualakun${game.replace(/\s/g,'').toLowerCase()} #jualbeliakungame #luunastore`;
+#${game.replace(/\s/g,'').toLowerCase()} #jualakun${game.replace(/\s/g,'').toLowerCase()} #jualbeli${game.replace(/\s/g,'').toLowerCase()} #luunastore`;
 
     document.getElementById('result-box').textContent = generated;
     document.getElementById('form-section').style.display = 'none';
@@ -329,9 +332,7 @@ Level: ${level}${charlim ? '\nCharacter limited: ' + charlim : ''}${kelebih ? '\
   }
 
   function kirimWA() {
-    let waNum = document.getElementById('nohp').value.trim().replace(/\D/g,'');
-    if (waNum.startsWith('0')) waNum = '62' + waNum.slice(1);
-    window.open('https://wa.me/' + waNum + '?text=' + encodeURIComponent(generated), '_blank');
+    window.open('https://wa.me/6282123154354?text=' + encodeURIComponent(generated), '_blank');
   }
 
   function editForm() {
